@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    margin: 0px;
+    padding: 15px;
+    
+}
+
+.encabezado {
+    text-align: center;
+    grid-area: encabezado; 
+}
+
+.principal {
+    text-align: center;
+    padding-bottom: 20px;
+    grid-area: principal;
+}
+
+.pie {
+    text-align: center;
+    grid-area: pie;
+}
+
+h1 {
+    font-family: 'Roboto-Medium';
+    letter-spacing: 3px;
+    color: #2596be;
+}
+
+.logo {
+    line-height: 5px;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;  
+}
+
+.logo p {
+    font-family: 'Roboto-Medium';
+    color: #cf1c8d;
+    font-size: 14px;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #2596be;
+    color: white;
+    border: 1px solid #2596be;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #cf1c8d;
+    border: 1px solid #cf1c8d;
+}
+
+#email, #contraseña, .ancho {
+    width: 90%;
+    padding: 15px;
+}
+
+.checkbox {
+    padding-left: 10px;
+    text-align: start;
+    color: #666666
+}
+
+a {
+    color: #2596be;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+}
+
+a:hover {   
+    color: #cf1c8d;
+}
+
+form {
+    padding-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3vh 80vh 1vh;
+        gap: 10px;
+        grid-template-areas: "encabezado encabezado"
+                                "principal principal"
+                                "pie pie";
+    }
+}
