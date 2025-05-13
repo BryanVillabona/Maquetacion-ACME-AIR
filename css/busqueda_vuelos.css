@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    margin: 1px;
+    padding: 1px;
+}
+
+.encabezado {
+    text-align: center;
+    grid-area: encabezado;
+}
+
+.principal {
+    text-align: center;
+    padding-bottom: 20px;
+    grid-area: principal;
+    border: 2px solid white;
+    border-radius: 20px 20px 0px 0px;
+    background: white;
+}
+
+.pie {
+    text-align: center;
+    grid-area: pie;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #c4c4c4;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 10px 2px #c4c4c4;
+    grid-area: vuelos;
+}
+
+.icono2 {
+    margin-right: 15px;
+    height: 60px;
+    width: 60px;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #cf1c8d, 75%, #2596be);
+    color: white;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.icono {
+    margin-right: 15px;
+    height: 70px;
+    width: 90px;
+}
+
+.texto-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.superior {
+    font-size: 30px;
+}
+
+.inferior {
+    font-size: 12px;
+}
+
+.columna {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.icono-usuario, .cerrar-sesion {
+    font-weight: bold;
+    line-height: 0px;
+}
+
+.ancho {
+    width: 90%;
+    padding: 15px;
+}
+
+#fecha-salida, #fecha-regreso {
+    width: 80%;
+    padding: 15px;
+}
+
+input[type="submit"] {
+    background-color: #2596be;
+    color: white;
+    border: 1px solid #2596be;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #cf1c8d;
+    border: 1px solid #cf1c8d;
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+a:hover {   
+    color: #cf1c8d;
+}
+
+.checkbox {
+    padding-left: 10px;
+    text-align: start;
+    color: #666666
+}
+
+@media (max-width: 500px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 80vh 1vh;
+        gap: 10px;
+        grid-template-areas: "encabezado encabezado"
+            "principal principal"
+            "pie pie";
+    }
+
+    .contenedor2 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 32vh 1vh;
+        gap: 10px;
+        grid-template-areas: "vuelos vuelos"
+            "checkin checkin"
+            "mis_vuelos mis_vuelos";
+    }
+}
