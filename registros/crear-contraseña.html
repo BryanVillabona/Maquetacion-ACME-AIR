@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACME AIR | Recuperar contraseña</title>
+    <title>ACME AIR | Crear contraseña</title>
     <link rel="stylesheet" href="../css/registro.css">
 </head>
 
@@ -24,13 +24,18 @@
                 <div class="columna">
                     <section>
                         <div class="subtitulo">
-                            <h2>Recuperar Contraseña</h2>
+                            <h2>Crear Contraseña</h2>
                         </div>
                         <div>
-                            <form action="recuperar_contraseña" target="#">
-                                <label for="email"></label><br>
-                                <input type="email" id="email" name="email" placeholder="E-mail" class="ancho" required><br><br>
-                                <p>Si el e-mail se encuentra registrado se enviará un link para continuar con la recuperación de su contraseña.</p>
+                            <form action="registro" target="#">
+                                <label for="contraseña"><br>
+                                    <input type="password" id="contraseña" class="ancho" name="contraseña"
+                                        placeholder="Contraseña" required>
+                                </label><br><br>
+                                <label for="repetir_contraseña">
+                                    <input type="password" id="repetir_contraseña" class="ancho" name="repetir_contraseña"
+                                        placeholder="Repetir contraseña" required>
+                                </label><br><br>
                                 <input type="submit" value="GUARDAR" class="ancho">
                             </form>
                         </div>
