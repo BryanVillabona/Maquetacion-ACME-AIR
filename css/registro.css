@@ -94,6 +94,15 @@ input[type="submit"]:hover {
     border-bottom: 2px solid #666666;
 }
 
+form p {
+    text-align: justify;
+    line-height: 26px;
+    font-size: 18px;
+    margin: 10px;
+    margin-bottom: 30px;
+    color: #666666
+}
+
 @media (max-width: 500px) {
     .contenedor {
         display: grid;
