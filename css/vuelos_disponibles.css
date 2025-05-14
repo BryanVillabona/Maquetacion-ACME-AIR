@@ -60,7 +60,7 @@ body {
 .mis_vuelos {
     display: flex;
     align-items: center;
-    
+
     text-align: left;
     padding: 12px;
     border: 1px solid #c4c4c4;
@@ -74,7 +74,9 @@ body {
     font-weight: bold;
 }
 
-.vuelos:hover, .checkin:hover, .mis_vuelos:hover {
+.vuelos:hover,
+.checkin:hover,
+.mis_vuelos:hover {
     transform: scale(1.05);
 }
 
@@ -137,22 +139,28 @@ body {
     font-size: 12px;
 }
 
-.superior2, .inferior2 {
+.superior2,
+.inferior2 {
     margin: 1px;
     color: #666666;
     font-weight: bold;
 }
 
-.codigo, .codigo2 {
-    padding-left: 60px;
-}
+
 
 .cop {
     padding-left: 20px;
 }
 
-.precio, .codigo2, .estado {
+.precio,
+.codigo2,
+.estado {
     font-size: 24px;
+}
+
+.codigo,
+.codigo2 {
+    padding-left: 60px;
 }
 
 .estado {
@@ -175,7 +183,8 @@ h2 {
     font-size: 22px;
 }
 
-.icono-usuario, .cerrar-sesion {
+.icono-usuario,
+.cerrar-sesion {
     font-weight: bold;
     line-height: 0px;
 }
@@ -185,7 +194,8 @@ h2 {
     padding: 15px;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
     background-color: #2596be;
     color: white;
     border: 1px solid #2596be;
@@ -194,7 +204,8 @@ button, input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover,
+input[type="submit"]:hover {
     background-color: #cf1c8d;
     border: 1px solid #cf1c8d;
 }
@@ -222,7 +233,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {   
+a:hover {
     color: #cf1c8d;
 }
 
@@ -237,7 +248,9 @@ a:hover {
     border-bottom: 1px solid #666666;
 }
 
-@media (max-width: 500px) {
+
+
+@media (min-width: 390px) {
     .contenedor {
         display: grid;
         grid-template-columns: 100%;
@@ -247,4 +260,14 @@ a:hover {
             "principal principal"
             "pie pie";
     }
+
+    .codigo,
+    .codigo2 {
+    padding-left: 75px;
+    }
+
+    .cop {
+        padding-left: 35px;
+    }
 }
+
