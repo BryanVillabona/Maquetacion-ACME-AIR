@@ -87,7 +87,8 @@ h2 {
     font-size: 22px;
 }
 
-.icono-usuario, .cerrar-sesion {
+.icono-usuario,
+.cerrar-sesion {
     font-weight: bold;
     line-height: 0px;
 }
@@ -97,7 +98,8 @@ h2 {
     padding: 15px;
 }
 
-#fecha-salida, #fecha-regreso {
+#fecha-salida,
+#fecha-regreso {
     width: 80%;
     padding: 15px;
 }
@@ -121,7 +123,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {   
+a:hover {
     color: #cf1c8d;
 }
 
@@ -150,5 +152,26 @@ a:hover {
         grid-template-areas: "vuelos vuelos"
             "checkin checkin"
             "mis_vuelos mis_vuelos";
+    }
+}
+
+@media (platform: ios) {
+    input[type="submit"] {
+        background-color: #2596be;
+        color: white;
+        border: 1px solid #2596be;
+        border-radius: 5px 5px 5px 5px;
+        padding: 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #cf1c8d;
+        border: 1px solid #cf1c8d;
+    }
+
+    .ancho {
+        width: 90%;
+        padding: 15px;
     }
 }
