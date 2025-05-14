@@ -151,8 +151,20 @@ body {
     padding-left: 20px;
 }
 
-.precio, .codigo2 {
+.precio, .codigo2, .estado {
     font-size: 24px;
+}
+
+.estado {
+    padding-left: 50px;
+}
+
+.destino {
+    padding-left: 28px;
+}
+
+.codigo3 {
+    padding-left: 75px;
 }
 
 .columna {
@@ -235,6 +247,4 @@ a:hover {
             "principal principal"
             "pie pie";
     }
-
-    
 }
