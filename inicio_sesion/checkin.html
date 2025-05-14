@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME AIR | Check-in</title>
+    <link rel="stylesheet" href="../css/vuelos_disponibles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <div class="cabecera">
+                <img src="../img/avion.png" alt="icono-avion" class="icono">
+                <div class="texto-logo">
+                    <div class="superior">ACME AIR</div>
+                    <div class="inferior">Flying to the dreams</div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="principal">
+                <div class="columna">
+                    <section>
+                        <div class="usuario">
+                            <img src="../img/usuario.png" alt="icono-avion" class="icono2">
+                            <div class="texto-logo">
+                                <div class="superior">
+                                    <h2 class="icono-usuario">Usuario 007</h2>
+                                </div>
+                                <div class="inferior">
+                                    <p class="cerrar-sesion"><a href="#">Cerrar Sesión</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Check-in</h2>
+                        </div>
+                        <div class="contenedor2">
+                            <div class="columna2">
+
+                                <div class="vuelos">
+                                    <img src="../img/despegar.png" alt="icono-avion" class="icono3">
+                                    <div class="texto-logo">
+                                        <div class="superior2">05:30 - 06:30</div>
+                                        <div class="inferior2">1h 30 min<span class="codigo2">VAA025</span></div>
+                                        <div class="superior2">Bogotá - Barranquilla</div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="formulario">
+                                    <div class="contacto-emergencia">
+                                        Contacto En Caso De Emergencia
+                                    </div>
+                                    <form action="emergencia" target="#">
+                                        <label for="nombre"></label>
+                                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo"
+                                            pattern="[A-Za-z\s]+" class="ancho" required>
+                                        <label for="cel"></label><br><br>
+                                        <input type="tel" id="cel" name="cel" pattern="[0-9]{10}" placeholder="No. Teléfono celular"
+                                            class="ancho" required><br><br>
+                                        <input type="submit" value="GUARDAR" class="ancho">
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer class="pie">
+
+    </footer>
+    </div>
+</body>
+
+</html>

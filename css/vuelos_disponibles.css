@@ -139,10 +139,11 @@ body {
 
 .superior2, .inferior2 {
     margin: 1px;
+    color: #666666;
     font-weight: bold;
 }
 
-.codigo {
+.codigo, .codigo2 {
     padding-left: 60px;
 }
 
@@ -150,7 +151,7 @@ body {
     padding-left: 20px;
 }
 
-.precio {
+.precio, .codigo2 {
     font-size: 24px;
 }
 
@@ -172,7 +173,7 @@ h2 {
     padding: 15px;
 }
 
-button {
+button, input[type="submit"] {
     background-color: #2596be;
     color: white;
     border: 1px solid #2596be;
@@ -181,9 +182,27 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover {
     background-color: #cf1c8d;
     border: 1px solid #cf1c8d;
+}
+
+.formulario {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px 2px #c4c4c4;
+}
+
+.contacto-emergencia {
+    font-weight: bold;
+    color: #666666;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 
 a {
