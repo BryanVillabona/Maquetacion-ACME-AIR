@@ -8,6 +8,11 @@
     src: url('../fonts/Roboto-Medium.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Caladea-Regular';
+    src: url('../fonts/Caladea-Regular.ttf') format('truetype');
+}
+
 * {
     font-family: 'Roboto';
 }
@@ -34,6 +39,22 @@ body {
     grid-area: principal;
 }
 
+.encabezado .cabecera .texto-logo .superior {
+    font-family: 'Caladea-Regular';
+}
+
+.vuelos:hover .icono2, .checkin:hover .icono2, .mis_vuelos:hover .icono2, .tarjeta-vuelo:hover .icono3 {
+    filter: invert(100%);
+    transition-property: background-color, color;
+}
+
+.vuelos:hover, .checkin:hover, .mis_vuelos:hover, .tarjeta-vuelo:hover, .tarjeta-vuelo:hover .fila {
+    background-color: #cf1c8d;
+    color: #ffffff;
+    transition-property: background-color, color;
+    transition: transform 0.6s ease;
+}
+
 .main {
     text-align: center;
     padding-bottom: 20px;
@@ -56,7 +77,7 @@ body {
     border: 1px solid #c4c4c4;
     border-radius: 15px;
     box-shadow: 0px 10px 10px 2px #c4c4c4;
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
     grid-area: vuelos;
 }
 
@@ -65,12 +86,12 @@ body {
     align-items: center;
     text-align: left;
     padding: 12px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    border-radius: 15px;
     border: 1px solid #c4c4c4;
+    border-radius: 15px;
     box-shadow: 0px 10px 10px 2px #c4c4c4;
     transition: transform 0.3s ease;
+    margin-top: 35px;
+    margin-bottom: 35px;
     grid-area: checkin;
 }
 
@@ -86,8 +107,9 @@ body {
     grid-area: mis_vuelos;
 }
 
-.vuelos:hover, .checkin:hover, .mis_vuelos:hover {
+.vuelos:hover, .checkin:hover, .mis_vuelos:hover, .icono2 {
     transform: scale(1.05);
+    transition-property: background-color, color;
 }
 
 .columna2 p {
@@ -409,6 +431,23 @@ button {
 .precio {
     font-family: 'Roboto-Medium';
 }
+
+.logo img {
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.icono {
+    filter: drop-shadow(-10px 10px 2px rgba(0, 0, 0, 0.5));
+}
+
+.icono2, .icono-usuario2 {
+    filter: drop-shadow(-1px 5px 2px rgba(0, 0, 0, 0.5));
+}
+
+.icono:hover {
+    transform: scale(1.05);
+}
+
 /* Si el ancho de pantalla es mayor a 600px, ocultar app y mostrar advertencia */
 @media (min-width: 900px) {
     .celular {
