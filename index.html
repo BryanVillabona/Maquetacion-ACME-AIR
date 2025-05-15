@@ -5,48 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACME AIR | Inicio</title>
-    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
-    <div class="contenedor">
-        <header class="encabezado">
-        </header>
-        <main>
-            <div class="principal">
-                <section>
-                    <div class="logo">
-                        <img src="./img/logo.png" alt="logo-ACME-AIR">
-                        <h1>ACME AIR</h1>
-                        <p>FLYING TO YOUR DREAMS</p>
-                    </div>
-
-                    <h2>Iniciar Sesión</h2>
-                    <form action="./inicio_sesion/inicio_sesion.html" target="#">
-                        <label for="email">
-                            <input type="email" id="email" class="ancho" name="email" placeholder="Email" required>
-                        </label><br>
-                        <label for="contraseña"><br>
-                            <input type="password" id="contraseña" class="ancho" name="contraseña"
-                                placeholder="Contraseña" required>
-                        </label><br>
-                        <div class="checkbox">
-                            <label for="datos"><br>
-                                <input type="checkbox" id="datos" name="datos" value="si">
-                                Recordar mis datos
-                            </label><br><br>
-                        </div>
-                        <input type="submit" value="INGRESAR" class="ancho">
-                    </form>
-                    <p><a href="./registros/registro.html">Crear cuenta</a></p>
-                    <p><a href="./registros/recuperar-contraseña.html">¿Has olvidado tu contraseña?</a></p>
-                </section>
+    <div class="index">
+        <div class="celular">
+            <div class="mensaje-error">
+                <img src="./img/logo.png" alt="logo-ACME-AIR">
+                <h2>Esta aplicación está solo disponible para dispositivos móviles</h2>
+                <p>Por favor, accede a este sitio desde un celular para su uso.</p>
             </div>
-        </main>
-        <footer class="pie">
+        </div>
+        <div class="contenedor">
+            <header class="encabezado">
+            </header>
+            <main>
+                <div class="principal">
+                    <section>
+                        <div class="logo">
+                            <img src="./img/logo.png" alt="logo-ACME-AIR">
+                            <h1>ACME AIR</h1>
+                            <p>FLYING TO YOUR DREAMS</p>
+                        </div>
 
-        </footer>
+                        <h2>Iniciar Sesión</h2>
+                        <form action="./inicio_sesion/inicio_sesion.html" target="#">
+                            <label for="email">
+                                <input type="email" id="email" class="ancho" name="email" placeholder="Email" required>
+                            </label><br>
+                            <label for="contraseña"><br>
+                                <input type="password" id="contraseña" class="ancho" name="contraseña"
+                                    placeholder="Contraseña" required>
+                            </label><br>
+                            <div class="checkbox">
+                                <label for="datos"><br>
+                                    <input type="checkbox" id="datos" name="datos" value="si">
+                                    Recordar mis datos
+                                </label><br><br>
+                            </div>
+                            <input type="submit" value="INGRESAR" class="ancho">
+                        </form>
+                        <p><a href="./registros/registro.html">Crear cuenta</a></p>
+                        <p><a href="./registros/recuperar-contraseña.html">¿Has olvidado tu contraseña?</a></p>
+                    </section>
+                </div>
+            </main>
+            <footer class="pie">
+
+            </footer>
+        </div>
     </div>
+
 </body>
 
 </html>

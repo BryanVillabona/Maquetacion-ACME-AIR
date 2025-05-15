@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACME AIR | Recuperar contraseña</title>
-    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
-    <div class="contenedor">
+    <div class="celular">
+        <div class="mensaje-error">
+            <img src="../img/logo.png" alt="logo-ACME-AIR">
+            <h2>Esta aplicación está solo disponible para dispositivos móviles</h2>
+            <p>Por favor, accede a este sitio desde un celular para su uso.</p>
+        </div>
+    </div>
+    <div class="contenedor3">
         <header class="encabezado">
             <div class="cabecera">
                 <img src="../img/avion.png" alt="icono-avion" class="icono">
@@ -20,25 +27,25 @@
             </div>
         </header>
         <main>
-            <div class="principal">
+            <div class="main">
                 <div class="columna">
                     <section>
-                        <div class="subtitulo">
+                        <div class="subtitulo-reg">
                             <h2>Recuperar Contraseña</h2>
                         </div>
-                        <div>
-                            <form action="./crear-contraseña.html" target="#">
+                        <div class="contenedor2">
+                            <div class="columna2">
+                                <form action="./crear-contraseña.html" target="#">
                                 <label for="email"></label><br>
                                 <input type="email" id="email" name="email" placeholder="E-mail" class="ancho" required><br><br>
                                 <p>Si el e-mail se encuentra registrado se enviará un link para continuar con la recuperación de su contraseña.</p>
                                 <input type="submit" value="GUARDAR" class="ancho">
                             </form>
+                            </div>
                         </div>
                     </section>
                 </div>
-
             </div>
-
         </main>
         <footer class="pie">
 

@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACME AIR | Vuelos disponibles</title>
-    <link rel="stylesheet" href="../css/vuelos_disponibles.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
-    <div class="contenedor">
+    <div class="celular">
+        <div class="mensaje-error">
+            <img src="../img/logo.png" alt="logo-ACME-AIR">
+            <h2>Esta aplicación está solo disponible para dispositivos móviles</h2>
+            <p>Por favor, accede a este sitio desde un celular para su uso.</p>
+        </div>
+    </div>
+    <div class="contenedor3">
         <header class="encabezado">
             <div class="cabecera">
                 <img src="../img/avion.png" alt="icono-avion" class="icono">
@@ -20,11 +27,11 @@
             </div>
         </header>
         <main>
-            <div class="principal">
+            <div class="main">
                 <div class="columna">
                     <section>
                         <div class="usuario">
-                            <img src="../img/usuario.png" alt="icono-avion" class="icono2">
+                            <img src="../img/usuario.png" alt="icono-avion" class="icono-usuario2">
                             <div class="texto-logo">
                                 <div class="superior">
                                     <h2 class="icono-usuario">Usuario 007</h2>
@@ -43,33 +50,55 @@
                         </div>
                         <div class="contenedor2">
                             <div class="columna2">
-                                <a href="#">
-                                    <div class="vuelos">
+                                <a href="../inicio_sesion/checkin.html">
+                                    <div class="tarjeta-vuelo">
                                         <img src="../img/despegar.png" alt="icono-avion" class="icono3">
-                                        <div class="texto-logo">
-                                            <div class="superior2">05:30 - 06:30 <span class="codigo">VAA025</span></div>
-                                            <div class="inferior2">1h 30 min <span class="cop">COP</span><span class="precio">150.600</span></div>
+                                        <div class="contenido-vuelo">
+                                            <div class="fila">
+                                                <span class="hora">05:30 - 06:30</span>
+                                                <span class="codigo">VAA025</span>
+                                            </div>
+                                            <div class="fila">
+                                                <span class="duracion">1h 30 min</span>
+                                                <span class="precio"><span class="moneda">COP</span> 150.600</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#">
-                                    <div class="checkin">
+
+                                <a href="../inicio_sesion/checkin.html">
+                                    <div class="tarjeta-vuelo">
                                         <img src="../img/despegar.png" alt="icono-avion" class="icono3">
-                                        <div class="texto-logo">
-                                            <div class="superior2">10:30 - 12:30 <span class="codigo">VAA025</span></div>
-                                            <div class="inferior2">1h 30 min <span class="cop">COP</span><span class="precio">260.200</span></div>
+                                        <div class="contenido-vuelo">
+                                            <div class="fila">
+                                                <span class="hora">10:30 - 12:30</span>
+                                                <span class="codigo">VAA025</span>
+                                            </div>
+                                            <div class="fila">
+                                                <span class="duracion">1h 30 min</span>
+                                                <span class="precio"><span class="moneda">COP</span> 260.200</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#">
-                                    <div class="mis_vuelos">
+
+                                <a href="../inicio_sesion/checkin.html">
+                                    <div class="tarjeta-vuelo">
                                         <img src="../img/despegar.png" alt="icono-avion" class="icono3">
-                                        <div class="texto-logo">
-                                            <div class="superior2">14:15 - 15:45 <span class="codigo">VAA836</span></div>
-                                            <div class="inferior2">1h 30 min <span class="cop">COP</span><span class="precio">150.600</span></div>
+                                        <div class="contenido-vuelo">
+                                            <div class="fila">
+                                                <span class="hora">14:15 - 15:45</span>
+                                                <span class="codigo">VAA836</span>
+                                            </div>
+                                            <div class="fila">
+                                                <span class="duracion">1h 30 min</span>
+                                                <span class="precio"><span class="moneda">COP</span> 150.600</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </a><br><br>
+                                </a>
+
+                                <br>
                                 <a href="../inicio_sesion/inicio_sesion.html"><button class="ancho">VOLVER</button></a>
                             </div>
                         </div>

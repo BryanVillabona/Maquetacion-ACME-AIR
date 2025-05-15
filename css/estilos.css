@@ -1,0 +1,557 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+body .index {
+    margin: 0px;
+    padding: 15px;
+    
+}
+
+body {
+    margin: 1px;
+    padding: 1px;
+}
+
+.encabezado {
+    text-align: center;
+    grid-area: encabezado; 
+}
+
+.principal {
+    text-align: center;
+    padding-bottom: 20px;
+    grid-area: principal;
+}
+
+.main {
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid white;
+    background: white;
+    grid-area: principal;
+}
+
+.pie {
+    text-align: center;
+    grid-area: pie;
+}
+
+.vuelos {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #c4c4c4;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px 2px #c4c4c4;
+    transition: transform 0.3s ease;
+    grid-area: vuelos;
+}
+
+.checkin {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 12px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0px 10px 10px 2px #c4c4c4;
+    transition: transform 0.3s ease;
+    grid-area: checkin;
+}
+
+.mis_vuelos {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0px 10px 10px 2px #c4c4c4;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    grid-area: mis_vuelos;
+}
+
+.vuelos:hover, .checkin:hover, .mis_vuelos:hover {
+    transform: scale(1.05);
+}
+
+.columna2 p {
+    font-weight: bold;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #c4c4c4;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 10px 2px #c4c4c4;
+    grid-area: vuelos;
+}
+
+.icono2 {
+    margin-left: 20px;
+    margin-right: 15px;
+    height: 50px;
+    width: 60px;
+}
+
+.icono-usuario2 {
+    margin-right: 15px;
+    height: 60px;
+    width: 60px;
+}
+
+.superior p {
+    font-size: 18px;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #cf1c8d, 75%, #2596be);
+    color: white;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.icono {
+    margin-right: 15px;
+    height: 70px;
+    width: 90px;
+}
+
+.tarjeta-vuelo {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0px 10px 10px 2px #c4c4c4;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.contenido-vuelo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0;
+    font-weight: bold;
+    color: #666666;
+    font-size: 15px;
+}
+
+.codigo, .precio {
+    text-align: right;
+}
+
+.tarjeta-vuelo:hover {
+    transform: scale(1.03);
+}
+
+.icono3 {
+    height: 50px;
+    width: 60px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.texto-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.superior {
+    font-size: 30px;
+}
+
+h1 {
+    font-family: 'Roboto-Medium';
+    letter-spacing: 3px;
+    color: #2596be;
+}
+
+.logo {
+    line-height: 5px;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;  
+}
+
+.logo p {
+    font-family: 'Roboto-Medium';
+    color: #cf1c8d;
+    font-size: 14px;
+}
+
+strong {
+    word-spacing: 90px;
+}
+
+.inferior {
+    font-size: 12px;
+}
+
+.columna {
+    padding: 20px;
+}
+
+
+h2 {
+    padding-top: 20px;
+}
+
+.subtitulo-vuelos {
+    font-size: 22px;
+}
+
+.icono-usuario,
+.cerrar-sesion {
+    font-weight: bold;
+    line-height: 0px;
+}
+
+.superior2,
+.inferior2 {
+    margin: 1px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.cop {
+    padding-left: 20px;
+}
+
+.codigo,
+.codigo2 {
+    padding-left: 60px;
+}
+
+.precio,
+.codigo2,
+.estado {
+    font-size: 24px;
+}
+
+.estado {
+    padding-left: 50px;
+}
+
+.destino {
+    padding-left: 28px;
+}
+
+.codigo3 {
+    padding-left: 75px;
+}
+
+.superior .icono-usuario {
+    font-size: 22px;
+}
+
+.ancho {
+    width: 90%;
+    padding: 15px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+#fecha-salida,
+#fecha-regreso {
+    width: 80%;
+    padding: 15px;
+}
+
+.subtitulo {
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+
+.subtitulo-reg {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #666666;
+}
+
+form p {
+    text-align: justify;
+    line-height: 26px;
+    font-size: 18px;
+    margin: 10px;
+    margin-bottom: 30px;
+    color: #666666
+}
+
+input[type="submit"], button {
+    background-color: #2596be;
+    color: white;
+    border: 1px solid #2596be;
+    border-radius: 5px 5px 5px 5px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #cf1c8d;
+    border: 1px solid #cf1c8d;
+}
+
+
+.formulario {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px 2px #c4c4c4;
+}
+
+.contacto-emergencia {
+    font-weight: bold;
+    color: #666666;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+#email, #contraseña, .ancho {
+    width: 90%;
+    padding: 15px;
+}
+
+.viajes {
+    margin-top: 34px;
+    margin-bottom: 25px;
+    text-align: start;
+    line-height: 5px;
+    padding-left: 10px;
+    color: #666666;
+    font-weight: bold;
+    border-bottom: 1px solid #666666;
+}
+
+.checkbox {
+    padding-left: 10px;
+    text-align: start;
+    color: #666666
+}
+
+a {
+    color: #2596be;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+}
+
+a:hover {   
+    color: #cf1c8d;
+}
+
+.columna2 a {
+    color: #666666;
+    text-decoration: none;
+}
+
+form {
+    padding-bottom: 15px;
+}
+
+.celular {
+    display: none;
+}
+
+.contenedor {
+    display: block;
+}
+
+button {
+    margin-bottom: 50px;
+}
+
+.moneda {
+    font-size: 16px;
+}
+
+.fila {
+    align-items: center;
+}
+
+.precio {
+    font-family: 'Roboto-Medium';
+}
+/* Si el ancho de pantalla es mayor a 600px, ocultar app y mostrar advertencia */
+@media (min-width: 900px) {
+    .celular {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #000000d0;
+        z-index: 9999;
+        padding: 20px;
+    }
+
+    .mensaje-error {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        max-width: 90%;
+        font-size: 18px;
+        box-shadow: 0px 0px 15px #000;
+    }
+
+    .mensaje-error h2 {
+        color: #cf1c8d;
+    }
+
+    .mensaje-error img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor, .contenedor2, .contenedor3, .contendor4 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3vh 80vh 1vh;
+        grid-template-areas: "encabezado encabezado"
+                                "principal principal"
+                                "pie pie";
+    }
+
+    .contenedor2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh 32vh 1vh;
+        grid-template-areas: "vuelos vuelos"
+            "checkin checkin"
+            "mis_vuelos mis_vuelos";
+    }
+
+    .contenedor3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 16vh 80vh 1vh;
+        grid-template-areas: "encabezado encabezado"
+            "principal principal"
+            "pie pie";
+    }
+
+    .contenedor4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh 80vh 1vh;
+        grid-template-areas: "encabezado encabezado"
+            "principal principal"
+            "pie pie";
+    }
+
+    .tarjeta-vuelo {
+        padding: 10px;
+    }
+
+    .fila {
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .tarjeta-vuelo {
+        padding: 10px;
+    }
+
+
+    .icono3 {
+        height: 45px;
+        width: 50px;
+    }
+}
+
+@media (max-width: 200px) {
+    .tarjeta-vuelo {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .icono3 {
+        display: none;
+    }
+
+    .fila {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 12px;
+        margin: 4px 0;
+    }
+
+    .codigo,
+    .precio {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .contenido-vuelo {
+        width: 100%;
+    }
+
+    .columna2 {
+        padding: 4px;
+    }
+
+    h2, .ancho {
+        font-size: 14px;
+    }
+
+    button.ancho {
+        padding: 8px;
+    }
+}
+
+
+/* estilos de inicio_sesion.css */
+
+
+
