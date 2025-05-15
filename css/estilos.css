@@ -81,20 +81,19 @@ body {
     grid-area: vuelos;
 }
 
-label {
+.salida, .regreso {
       display: block;
       margin-bottom: 6px;
       font-weight: bold;
       color: #666666;
+      text-align: star;
+      justify-items: left;
     }
 
     input[type="date"] {
-      width: 100%;
-      padding: 10px;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 6px;
-      box-sizing: border-box;
       transition: border-color 0.3s;
     }
 
